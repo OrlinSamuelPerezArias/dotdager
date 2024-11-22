@@ -7,9 +7,11 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Dot Dager</title>
         <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/card.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Anton&family=Arizonia&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=Anton&family=Arizonia&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Slackside+One&display=swap" rel="stylesheet">
     </head>
     
 <body>
@@ -47,21 +49,69 @@
             </div>
 
         </section>
-        <section id="Interests" class="interests-section">
-            <h2 class="section-title">Interests</h2>
-            
-            <div class="interests-grid">
-                <div class="grid-item"><img src="https://via.placeholder.com/400x500" alt="Imagen 1"></div>
-                <div class="grid-item"><img src="https://via.placeholder.com/370x320" alt="Imagen 2"></div>
-                <div class="grid-item"><img src="https://via.placeholder.com/400x400" alt="Imagen 3"></div>
-                <div class="grid-item"><img src="https://via.placeholder.com/400x450" alt="Imagen 2"></div>
-                <div class="grid-item"><img src="https://via.placeholder.com/400x600" alt="Imagen 4"></div>
-                <div class="grid-item"><img src="https://via.placeholder.com/400x350" alt="Imagen 5"></div>
-                <div class="grid-item"><img src="https://via.placeholder.com/400x350" alt="Imagen 6"></div>
-                <div class="grid-item"><img src="https://via.placeholder.com/400x550" alt="Imagen 7"></div>
+        <section id="About" class="about">
+            <h2 class="section-title">about</h2>
+            <img class="image-about-text" src="/assets/Guitar.png">
+            <div class="text-about">
+                <p>
+                    <span> nos apasiona ofrecer soluciones innovadoras y de calidad para </span>
+                    <span> [tu sector]. Nuestro compromiso es superar las expectativas de </span>
+                    <span> nuestros clientes con un equipo dedicado y siempre a la </span>
+                    <span>vanguardia.</span>
+                </p>
             </div>
         </section>
-        
+        <section id="Interests" class="interests-section">
+            <h2 class="section-title">interests</h2>
+            
+            <div class="interests-grid">
+                <article class="image-1">
+                    <img src="https://i.pinimg.com/736x/9f/f7/8d/9ff78d8ce44a6ec7b5a0b516e0a71706.jpg" alt="">
+                </article>
+                <article class="image-2">
+                    <img src="https://www.ellibrotecnico.com/imagenes_grandes/9788419/978841997551.JPG" alt="">
+                </article>
+                <article class="image-3">
+                    <img src="https://www.ellibrotecnico.com/imagenes_grandes/9788419/978841997551.JPG" alt="">
+                </article>
+                <article class="image-4">
+                    <img src="https://www.ellibrotecnico.com/imagenes_grandes/9788419/978841997551.JPG" alt="">
+                </article>
+                <article class="image-5">
+                    <img src="https://www.ellibrotecnico.com/imagenes_grandes/9788419/978841997551.JPG" alt="">
+                </article>
+                <article class="image-6">
+                    <img src="https://www.ellibrotecnico.com/imagenes_grandes/9788419/978841997551.JPG" alt="">
+                </article>
+                <article class="image-7">
+                    <img src="https://www.ellibrotecnico.com/imagenes_grandes/9788419/978841997551.JPG" alt="">
+                </article>
+                <article class="image-8">
+                    <img src="https://www.ellibrotecnico.com/imagenes_grandes/9788419/978841997551.JPG" alt="">
+                </article>
+           </div>
+        </section>
+        <section id="contact" class="contact">
+            <h2 class="section-title">contact</h2>
+            <div class="contact-grid">
+                <div></div>
+                <div>
+                    <form action="#" method="post">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                        
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                        
+                        <label for="message">Enter Your Message Here</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+                        
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+
+            </div>
+        </section>
     </main>
 </body>
 </html>

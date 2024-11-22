@@ -1,0 +1,7 @@
+.interests-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.interests-grid img{
+    width: 100%;
+}
