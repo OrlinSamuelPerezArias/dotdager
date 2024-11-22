@@ -1,13 +1,13 @@
 
-*::before,
-*::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
+
 body {
     background-color:#E9E7E6;
     background: linear-gradient(#E9E7E6, #CECECE);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+
     
 }
 a{
@@ -31,6 +31,7 @@ nav{
 
 
 }
+
 nav a{
     color: white;
     align-items: center;
@@ -42,6 +43,9 @@ nav a{
 }
 nav a:hover{
     color: #FFBB00;
+}
+nav ul{
+    display: block;
 }
 nav ul li{
     list-style: none;
@@ -77,13 +81,14 @@ nav ul li{
 
 
 .card-about{
-    width: 800px;
+    
+    width: 650px;
     height: auto;
     background-color: #E2E2E2;
-    margin: 100px auto;
+    margin: 50px auto;
     border-radius: 20px;
     padding: 15px;
-    box-shadow: -20px 20px 4px -2px #0000009a;
+    box-shadow: -15px 15px 4px -3px #0000009a;
     display: flex;
     gap: 20px;
     text-transform: uppercase;
@@ -92,13 +97,16 @@ nav ul li{
 
 }
 .card-about img{
-    width: 288px;
+    width: 220px;
 }
 .card-about h1{
     padding: 0px;
     margin: 0;
     letter-spacing: 1px;
-    font-size: 50px;
+    font-size: 40px;
+}
+.card-about p{
+    font-size: 13px;
 }
 .section-title{
     font-family: "Slackside One", "cursive";
@@ -110,10 +118,12 @@ nav ul li{
 .about{
     position: relative;
     text-align: center;
+
+    
 }
 .image-about-text{
-    margin-top: 50px;
-    max-width: 900px;
+    margin-top: 10px;
+    max-width: 70%;
     
 }
 
@@ -136,3 +146,101 @@ nav ul li{
     width: 800px;
     display:inline;
 }
+.contact img{
+    max-width: 100%;
+}
+.contact-grid{
+    display: grid;
+    margin: 0;
+    grid-template-columns: 1fr 1fr;
+}
+.contact label{
+    
+}
+.contact input{
+    display: block;
+    border: none;
+    box-shadow: -16px 13px 6.2px -10px #0000003d ;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+}
+.contact  textarea{
+    width: 100%;
+    display: block;
+    box-shadow: -16px 13px 6.2px -10px #0000003d ;
+
+
+}
+.contact-grid form{
+    padding-left: 20px;
+    width: 90%;
+    font-family: "poppins", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+
+    letter-spacing: 0px;
+
+}
+.send{
+    background-color: #FFBB00;
+    font-weight: 700;
+    letter-spacing: -1px;
+    margin-top: 20px ;
+    cursor: pointer;
+    font-size: 20px;
+    border: none;
+    padding: 10px 10px 10px 10px;
+    font-family: "poppins" ,  system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.send img{
+    margin-left: 5px;
+    width: 50px;
+}
+@media (max-width: 780px) {
+    .navbar-menu{
+      display: none;  
+      text-align: center;
+    }
+    .contact-grid{
+        grid-template-columns: 1fr;
+    }
+    .contact-grid div:nth-child(1){
+        display: none;
+    }
+    .navbar-logo{
+        text-align: center;
+    }
+    nav{
+        width: 400px;
+
+    }
+  }
+  @media (max-width: 500px) {
+    .navbar-menu{
+      display: none;  
+      text-align: center;
+      
+
+
+    }
+    .navbar-logo{
+        text-align: center;
+    }
+    nav{
+        width: 100%;
+
+    }
+  }
+  .networks{
+    display: flex;
+  }
+  .networks a{
+    display: flex;
+    font-size: 40px;
+    width: 25px;
+    align-items: center;
+    border-radius: 10px;
+    justify-content: center;
+    background-color: #282828;
+    color: white;
+  }
