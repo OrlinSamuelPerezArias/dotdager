@@ -1,246 +1,380 @@
-
-
-
 body {
-    background-color:#E9E7E6;
-    background: linear-gradient(#E9E7E6, #CECECE);
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden; 
-
-    
+  background-color: #e9e7e6;
+  background: linear-gradient(#e9e7e6, #cecece);
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
-nav{
-    position: relative;
-    background-color: #000;
-    width: 650px;
-    height: 75px;
-    margin: 25px auto;
-    border-radius: 100px 100px 100px 100px; 
-    box-shadow: 0px 4px 4px -2px #00000057;
-    display: flex;
-    align-items: center;
+nav {
+  position: relative;
+  background-color: #000;
+  width: 650px;
+  height: 75px;
+  margin: 25px auto;
+  border-radius: 100px 100px 100px 100px;
+  box-shadow: 0px 4px 4px -2px #00000057;
+  display: flex;
+  align-items: center;
 }
-.navbar-menu{
-    display: flex;
-    align-items: center;
-    margin: auto 0;
-
-
+.navbar-menu {
+  display: flex;
+  align-items: center;
+  margin: auto 0;
 }
 
-nav a{
-    color: white;
-    align-items: center;
-    margin-right: 13px;
-    font-family: "poppins", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 600;
-    font-size: 22px;
-    letter-spacing: -1px;
+nav a {
+  color: white;
+  align-items: center;
+  margin-right: 13px;
+  font-family: "poppins", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  letter-spacing: -1px;
 }
-nav a:hover{
-    color: #FFBB00;
+nav a:hover {
+  color: #ffbb00;
 }
-nav ul{
-    display: block;
+nav ul {
+  display: block;
 }
-nav ul li{
-    list-style: none;
+nav ul li {
+  list-style: none;
 }
-.navbar-logo{
-    font-family: "Arizonia", cursive;
-    color: #FFBB00;
-    font-size: 40px;
-    padding: 0px;
-    margin-left: 50px;
-    font-weight: normal;
-    letter-spacing: -2px;
+.navbar-logo {
+  font-family: "Arizonia", cursive;
+  color: #ffbb00;
+  font-size: 40px;
+  padding: 0px;
+  margin-left: 50px;
+  font-weight: normal;
+  letter-spacing: -2px;
 }
-.cat-tail{
-    position: absolute;
-    top: 8px;
-    left: -105px;
+.cat-tail {
+  position: absolute;
+  top: 8px;
+  left: -105px;
 }
-.hind-leg{
-    position: absolute;
-    top: 55px;
-    left: 100px;
-
-
+.hind-leg {
+  position: absolute;
+  top: 55px;
+  left: 100px;
 }
-.face-cat{
-    position: absolute;
-    top: -12px;
-    height: 90px;
-    right: 1px;
-}
-
-
-
-.card-about{
-    
-    width: 650px;
-    height: auto;
-    background-color: #E2E2E2;
-    margin: 50px auto;
-    border-radius: 20px;
-    padding: 15px;
-    box-shadow: -15px 15px 4px -3px #0000009a;
-    display: flex;
-    gap: 20px;
-    text-transform: uppercase;
-    color: #1E1E1E;
-    font-family: "Anton", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
-}
-.card-about img{
-    width: 220px;
-}
-.card-about h1{
-    padding: 0px;
-    margin: 0;
-    letter-spacing: 1px;
-    font-size: 40px;
-}
-.card-about p{
-    font-size: 13px;
-}
-.section-title{
-    font-family: "Slackside One", "cursive";
-    color: #282828;
-    font-size: 65px;
-    text-align: center;
-    letter-spacing: 4px;
-}
-.about{
-    position: relative;
-    text-align: center;
-
-    
-}
-.image-about-text{
-    margin-top: 10px;
-    max-width: 70%;
-    
+.face-cat {
+  position: absolute;
+  top: -12px;
+  height: 90px;
+  right: 1px;
 }
 
-.text-about{
-    font-family: "poppins";
-    text-transform: capitalize;
-    position: absolute;
-    top: 50%; 
-    font-size: 18px;
-    font-weight: 500;
-    left: 50%; 
-    padding: 0;
-    transform: translate(-50%, -50%);
+.card-about {
+  width: 650px;
+  height: auto;
+  background-color: #e2e2e2;
+  margin: 50px auto;
+  border-radius: 20px;
+  padding: 15px;
+  box-shadow: -15px 15px 4px -3px #0000009a;
+  display: flex;
+  gap: 20px;
+  text-transform: uppercase;
+  color: #1e1e1e;
+  font-family: "Anton", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
-.text-about span{
-    background-color: #000;
-    margin-bottom:4px ;
-    color: #FFBB00;
-    padding: 0;
-    width: 800px;
-    display:inline;
+.card-about img {
+  width: 220px;
 }
-.contact img{
-    max-width: 100%;
+.card-about h1 {
+  padding: 0px;
+  margin: 0;
+  letter-spacing: 1px;
+  font-size: 40px;
 }
-.contact-grid{
-    display: grid;
-    margin: 0;
-    grid-template-columns: 1fr 1fr;
+.card-about p {
+  font-size: 17px;
 }
-.contact label{
-    
+.section-title {
+  font-family: "Slackside One", "cursive";
+  color: #282828;
+  font-size: 65px;
+  text-align: center;
+  letter-spacing: 4px;
 }
-.contact input{
-    display: block;
-    border: none;
-    box-shadow: -16px 13px 6.2px -10px #0000003d ;
-    width: 100%;
-    height: 40px;
-    margin-bottom: 10px;
+.about {
+  position: relative;
+  text-align: center;
 }
-.contact  textarea{
-    width: 100%;
-    display: block;
-    box-shadow: -16px 13px 6.2px -10px #0000003d ;
+.image-about-text {
+  margin-top: 10px;
+  max-width: 70%;
+}
 
-
+.text-about {
+  font-family: "poppins";
+  text-transform: capitalize;
+  position: absolute;
+  top: 50%;
+  font-size: 18px;
+  font-weight: 500;
+  left: 50%;
+  padding: 0;
+  transform: translate(-50%, -50%);
 }
-.contact-grid form{
-    padding-left: 20px;
-    width: 90%;
-    font-family: "poppins", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 600;
-
-    letter-spacing: 0px;
-
+.text-about span {
+  background-color: #000;
+  margin-bottom: 4px;
+  color: #ffbb00;
+  padding: 0;
+  width: 800px;
+  display: inline;
 }
-.send{
-    background-color: #FFBB00;
-    font-weight: 700;
-    letter-spacing: -1px;
-    margin-top: 20px ;
-    cursor: pointer;
-    font-size: 20px;
-    border: none;
-    padding: 10px 10px 10px 10px;
-    font-family: "poppins" ,  system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+.contact img {
+  max-width: 100%;
 }
-.send img{
-    margin-left: 5px;
-    width: 50px;
+.contact-grid {
+  display: grid;
+  margin: 0;
+  grid-template-columns: 1fr 1fr;
+}
+.contact label {
+}
+.contact input {
+  display: block;
+  border: none;
+  box-shadow: -16px 13px 6.2px -10px #0000003d;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 10px;
+}
+.contact textarea {
+  width: 100%;
+  height: 150px;
+  display: block;
+  border: none;
+  box-shadow: -16px 13px 6.2px -10px #0000003d;
+}
+.contact-grid form {
+  padding-left: 20px;
+  width: 90%;
+  font-family: "poppins", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  font-weight: 600;
+
+  letter-spacing: 0px;
+}
+.send {
+  background-color: #ffbb00;
+  font-weight: 700;
+  letter-spacing: -1px;
+  margin-top: 20px;
+  cursor: pointer;
+  font-size: 25px;
+  border: none;
+  box-shadow: -4px 10px 0px 3px #00000091;
+  padding: 10px 10px 10px 10px;
+  font-family: "poppins", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+}
+.send:hover {
+  transform: scale(0.9);
+}
+.send img {
+  margin-left: 5px;
+  width: 50px;
 }
 @media (max-width: 780px) {
-    .navbar-menu{
-      display: none;  
-      text-align: center;
-    }
-    .contact-grid{
-        grid-template-columns: 1fr;
-    }
-    .contact-grid div:nth-child(1){
-        display: none;
-    }
-    .navbar-logo{
-        text-align: center;
-    }
-    nav{
-        width: 400px;
-
-    }
+  .navbar-menu {
+    display: none;
+    text-align: center;
   }
-  @media (max-width: 500px) {
-    .navbar-menu{
-      display: none;  
-      text-align: center;
-      
-
-
-    }
-    .navbar-logo{
-        text-align: center;
-    }
-    nav{
-        width: 100%;
-
-    }
+  .contact-grid {
+    grid-template-columns: 1fr;
   }
-  .networks{
-    display: flex;
+  .contact-grid div:nth-child(1) {
+    display: none;
   }
-  .networks a{
-    display: flex;
-    font-size: 40px;
-    width: 25px;
+  .navbar-logo {
+    text-align: center;
+  }
+  nav {
+    width: 400px;
+  }
+  .card-about {
+    width: 390px;
+    display: block;
+  }
+  .card-about img {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .navbar-menu {
+    display: none;
+    text-align: center;
+  }
+  .navbar-logo {
+    text-align: center;
+  }
+  nav {
+    width: 100%;
+  }
+}
+.networks div {
+  display: flex;
+  gap: 10px;
+}
+.networks a {
+  display: flex;
+  align-items: center;
+  padding: 3px;
+  justify-content: center;
+  background-color: #282828;
+  color: white;
+  border-radius: 15px;
+}
+.networks a:hover {
+  color: #ffbb00;
+}
+svg {
+  width: 40px;
+  height: 40px;
+}
+@media (max-width: 1024px) {
+  .image-about-text {
+    width: 100%;
+    transform: rotate(-70deg);
+    transition: transform 0.3s ease;
+  }
+  .text-about {
+    top: 90%;
+    width: 100%;
+  }
+  .text-about span {
+    background-color: #000000c7;
+    margin-bottom: 4px;
+    color: #ffbb00;
+    padding: 0;
+    width: 100%;
+    display: inline;
+  }
+}
+.interests-grid {
+  column-width: 250px;
+  column-gap: 20px;
+  overflow: hidden;
+}
+
+.image-item {
+  position: relative;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.image-container {
+  position: relative;
+}
+
+.image-container .image {
+  width: 100%;
+  display: block;
+  transition: opacity 0.3s ease;
+}
+
+.image-container .hover-image {
+  width: 100%;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.image-item:hover .image {
+  opacity: 0;
+}
+
+.image-item:hover .hover-image {
+  display: block;
+  opacity: 1;
+}
+
+.image-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  font-size: 35px;
+  font-family: "Anton";
+  width: 100%;
+  text-transform: uppercase;
+}
+
+footer {
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-family: "poppins", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.social-links {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-links li {
+  display: inline-block;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: #00ade2;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #ff5c8d;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .social-links {
+    flex-direction: column;
     align-items: center;
-    border-radius: 10px;
-    justify-content: center;
-    background-color: #282828;
-    color: white;
   }
+  .social-links li {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  footer {
+    padding: 15px;
+  }
+  .social-links a {
+    font-size: 16px;
+  }
+}
