@@ -288,6 +288,9 @@
             <p class="image-text">More Pickle</p>
           </article>
         </div>
+        <button id="show-more-btn" class="show-more-btn">See more pickles.</button>
+        <button id="hide-interests-btn" class="hide-interests-btn" style="display:none;">Hide the pickles.</button>
+
       </section>
       <section id="contact" class="contact">
         <h2 class="section-title">contact</h2>
@@ -369,6 +372,28 @@
           </ul>
         </div>
       </footer>
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        const showMoreBtn = document.getElementById('show-more-btn');
+        const hideInterestsBtn = document.getElementById('hide-interests-btn');
+        const gridItems = document.querySelectorAll('.interests-grid .image-item');
+
+        showMoreBtn.addEventListener('click', function() {
+          gridItems.forEach(item => item.style.display = 'block');
+          showMoreBtn.style.display = 'none'; 
+          hideInterestsBtn.style.display = 'block'; 
+        });
+
+        hideInterestsBtn.addEventListener('click', function() {
+          gridItems.forEach((item, index) => {
+            if (index >= 3) item.style.display = 'none';
+          });
+          hideInterestsBtn.style.display = 'none'; 
+          showMoreBtn.style.display = 'block'; 
+        });
+      });
+
+      </script>
     </main>
   </body>
 </html>
