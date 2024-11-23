@@ -200,6 +200,12 @@ nav ul li {
   .contact-grid div:nth-child(1) {
     display: none;
   }
+  .contact-grid div:nth-child(2) {
+    width: 100%;
+  }
+  .contact-grid input{
+    width: 100%;
+  }
   .navbar-logo {
     text-align: center;
   }
@@ -377,4 +383,23 @@ footer {
   .social-links a {
     font-size: 16px;
   }
+  .about{
+    height: 40vh;
+    margin-bottom: 140px;
+  } 
+  
+  .card-about {
+    width: 100%;
+    box-shadow: -10px 7px 4px 1px #1e1f2b28;
+  }
+  .text-about{
+    top: 70%;
+
+  }
+  .image-about-text{
+
+    max-width: 1200px;
+
+  }
 }
+
